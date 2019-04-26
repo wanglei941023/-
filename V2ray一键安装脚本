@@ -1,0 +1,20 @@
+1.连接VPS（推荐finalshell）
+代码：wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/V2ray.Fun/master/install.sh && bash install.sh
+如果出现找不到wget命令，输入以下代码：
+CentOS：
+yum -y install wget
+Ubuntu/Debian：
+apt-get -y install wget
+
+2.v2ray 安装接近完成的时候会提示输入用户名、密码、控制面板端口，可随意设置
+
+3.一般情况下已经可以使用了，输入控制板的地址就可以访问控制面板了，为了保险再输入命令：pip install Flask-BasicAuth
+
+4.上面全部完成了后，启动面板，通过shell工具连接后输入1，提示V2ray.fun satrted就是表示成功了
+
+5.浏览器输入IP+刚刚设置的端口，访问V2ray控制面板，输入用户名和登录密码，就可以使用了
+
+6.最后要是出现V2ray打不开的情况，可以连接VPS，输入代码：
+pip install Flask-BasicAuth
+v2ray
+1
